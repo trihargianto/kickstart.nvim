@@ -676,6 +676,9 @@ vim.o.shiftwidth=2
 vim.o.softtabstop=2
 vim.o.expandtab=true
 
+-- Key mappings
+vim.api.nvim_set_keymap("i", "jj", "<esc>", { noremap = true })
+
 -- APPEARANCE
 ------------------------------------------------------------------------
 
