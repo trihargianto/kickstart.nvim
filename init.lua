@@ -193,9 +193,14 @@ require('lazy').setup({
     -- Theme inspired by Atom
     'navarasu/onedark.nvim',
     priority = 1000,
-    config = function()
+    config = function(_, opts)
+      require('onedark').setup(opts)
+
       vim.cmd.colorscheme 'onedark'
     end,
+    opts = {
+      style = "cool"
+    },
   },
 
   {
