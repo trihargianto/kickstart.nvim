@@ -667,5 +667,11 @@ cmp.setup {
   },
 }
 
+-- Indents will have a width of 4 and use spaces instead of tabs
+vim.o.tabstop=2
+vim.o.shiftwidth=2
+vim.o.softtabstop=2
+vim.o.expandtab=true
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
